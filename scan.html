@@ -1,0 +1,32 @@
+<div ng-cloak>
+	<h1>
+		Scan Documents with Node JS
+	</h1>
+	<table>
+		<tr>
+		<td><div id="dwtcontrolContainer"></div>
+		</td>
+		</tr>
+		<tr>
+		<td>
+
+												<label for="source">
+                                                <p>Select Source:</p>
+                                                </label>
+                                                <select size="1" id="source" style="position:relative;" ng-onchange="source_onchange()">
+                                                    <option value = ""></option>
+                                                </select>
+			<button ng-click="load()" >LOAD</button>
+			<input type="button" value="Load Image" ng-click="btnLoad_onclick();" />
+			<input type="button" value="Scan Image" ng-click="AcquireImage();" />
+			<button ng-click="toPDF()" >To PDF</button>
+			<input id="btnUpload" type="button" value="Upload Image" ng-click="btnUpload_onclick()">
+		</td>
+		</tr>
+	</table>
+
+	<!--Custom script goes here-->
+	<script type="text/javascript">
+		
+	</script>
+</div>
